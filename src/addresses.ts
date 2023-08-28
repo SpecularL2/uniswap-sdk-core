@@ -32,9 +32,9 @@ export const UNI_ADDRESSES: AddressMap = constructSameAddressMap('0x1f9840a85d5a
 
 export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26197C432AFe78'
 
-export const V2_FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
+export const V2_FACTORY_ADDRESS = '0x9a5620572B1B90AB863b0956D73f75e97D1D72Ed'
 export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTORY_ADDRESS)
-export const V2_ROUTER_ADDRESS = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
+export const V2_ROUTER_ADDRESS = '0x86Ddf9cd6715090aff8ACB155214D3f050C4d3f0'
 export const V2_ROUTER_ADDRESSES: AddressMap = constructSameAddressMap(V2_ROUTER_ADDRESS)
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -145,6 +145,12 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x8357227D4eDc78991Db6FDB9bD6ADE250536dE1d'
 }
 
+// Base Goerli v3 addresses
+const SPECULAR_ADDRESSES: ChainAddresses = {
+  ...DEFAULT_ADDRESSES,
+  swapRouter02Address: '0x8357227D4eDc78991Db6FDB9bD6ADE250536dE1d'
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -160,7 +166,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.SEPOLIA]: SEPOLIA_ADDRESSES,
   [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES,
   [ChainId.BASE]: BASE_ADDRESSES,
-  [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES
+  [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
+  [ChainId.SPECULAR]: SPECULAR_ADDRESSES
 }
 
 /* V3 Contract Addresses */
